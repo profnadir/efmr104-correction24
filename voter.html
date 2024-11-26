@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="voter.css">
+</head>
+<body>
+    <h1>Questionnaire de vote</h1>
+    <form action="">
+        <ol>
+            <li>
+                <p>Le meilleur Antivirus ... </p>
+                <select name="ma" id="ma">
+                    <option value="vpn">VPN GATE</option>
+                    <option value="sas">SuperAntiSpy</option>
+                    <option value="afs" selected>Avira Free</option>
+                </select>
+            </li>
+            <li>
+                <p>Votre degré de satisfaction ...</p>
+                0% <input type="range" min="0" max="100" step="1"
+                    name="sat" id="sat"> 100%
+            </li>
+            <li>
+                <p>Avez vous dèjà utilisé ...</p>
+                <input type="radio" checked name="anti" value="oui" id="oui">
+                <label for="oui"> OUI </label>
+                <input type="radio"  name="anti" value="non" id="non">
+                <label for="non"> NON </label>
+            </li>
+        </ol>
+        <input type="submit">
+        <input type="reset" value="Annuler">
+    </form>
+</body>
+</html>
